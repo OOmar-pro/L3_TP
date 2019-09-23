@@ -95,8 +95,10 @@ int graphe_get_m(graphe* g)
 */
 int graphe_get_multiplicite_arete(graphe* g, int v, int w)
 {
-	/* TODO */
-	return 0;
+	if(v < 0 || v > g->n || w < 0 || w > g->n)
+		return -1;
+
+	return g->adj[v][w];
 }
 
 /* Cette fonction renvoie le degre du sommet v
@@ -105,7 +107,7 @@ int graphe_get_degre(graphe* g, int v)
 {
 	int deg =0;
 
-	/* TODO */
+	
 	
 	return deg;
 }
