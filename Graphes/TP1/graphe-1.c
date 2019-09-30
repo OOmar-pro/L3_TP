@@ -107,7 +107,7 @@ int graphe_get_degre(graphe* g, int v)
 {
 	int deg =0;
 
-	
+		
 	
 	return deg;
 }
