@@ -5,6 +5,9 @@
  * \date lundi 30 septembre 2019, 10:04:11 (UTC+0200)
  * \authors Pierre Rousselin, Antoine Rozenknop, Sophie Toulouse
 */
+
+//https://www.math.univ-paris13.fr/~rousselin/graphe-2/
+
 #include "graphe-2.h"
 
 #include <stdio.h>
@@ -15,58 +18,46 @@ int graphe_stable(graphe* g, int n)
 	int statut = -1;
 
 	if(n >= 0){
-		int i, j;
-
 		g->m = 0;
 		g->n = n;
 
-		int** t = calloc(n, sizeof(int*));
+		g->adj = calloc(n*n, sizeof(int));
 
-		for (i = 0; i < n; i++)
-		{
-			t[i] = calloc(n, sizeof(int));
-		 }
-		
-
-		g->adj = t;
-
-		statut = 0;
+		if(g->adj != NULL)
+			statut = 0;
 	}
 
-	return 0;
+	return statut;
 }
 
 void graphe_detruire(graphe *g)
 {
-	/* TODO */
+	free(g->adj);
+	g->adj = 0;
 }
 /* __________________________________ Ajout / Suppression d'arêtes */
 
 void graphe_ajouter_arete(graphe* g, int v, int w)
-{
-#if 0 /* ancien code à modifier */
-	++(g->adj[v][w]);
+{ 
+	++(g->adj[v*g->n+w]);
 	++(g->m);
 	if (v != w)
-		++(g->adj[w][v]);
-#endif
+		++(g->adj[w*g->n+v]);
+
 }
 
 int graphe_supprimer_arete(graphe* g, int v, int w)
 {
-#if 0 /* ancien code à modifier */
 	int statut = -1;	/* statut de réussite (statut == 0)
 				   ou d'échec (statut == -1) de la fonction */
-	if (v < g->n && w < g->n && (g->adj[v][w])) {
-		--(g->adj[v][w]);
+	if (v < g->n && w < g->n && (g->adj[v*g->n+w])) {
+		--(g->adj[v*g->n+w]);
 		if (v != w)
-			--(g->adj[w][v]) ;
+			--(g->adj[w*g->n+v]) ;
 		--(g->m);
 		statut = 0;
 	}
 	return statut;
-#endif
-	return -1;
 }
 
 /* ______________________________________ Accesseurs en lecture */
@@ -83,10 +74,7 @@ int graphe_get_m(graphe* g)
 
 int graphe_get_multiplicite_arete(graphe* g, int v, int w)
 {
-#if 0 /* ancien code à modifier */
-	return g->adj[v][w];
-#endif
-	return 0;
+	return g->adj[v*g->n+w];
 }
 
 /* NE PAS ACCÉDER DIRECTEMENT AUX CHAMPS EN-DESSOUS DE CETTE LIGNE */
