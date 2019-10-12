@@ -14,8 +14,20 @@
 
 mat_bool *mat_bool_creer_adj(graphe *g)
 {
-	/* TODO */
-	return NULL;
+	int i,j;
+
+	mat_bool* m = mat_bool_creer(g->n);
+
+	if(m == NULL){
+		return NULL;
+	}
+
+	for(i = 0; i < g->n; i++){
+		for(j = 0; j < g->n; j++){
+			mat_bool_set_coeff(m,i,j,graphe_get_multiplicite_arete(g,i,j) > 0);
+		}
+	} 
+	return m;
 }
 
 mat_bool *mat_bool_creer_clot_trans(graphe *g)
