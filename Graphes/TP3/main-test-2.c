@@ -20,10 +20,14 @@ int main()
 	graphe_ecrire_dot(&g, "exemple.dot");
 	system("dot -Tx11 exemple.dot");
 
+	printf(" ");
+
 	if ((m = mat_bool_creer_adj(&g))) {
 		mat_bool_afficher(m);
 		mat_bool_detruire(m);
 	}
+
+	
 
 	graphe_detruire(&g);
 	return EXIT_SUCCESS;
