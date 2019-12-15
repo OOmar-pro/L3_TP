@@ -25,6 +25,8 @@ struct parcours {
   graphe* arbo;
   int* prio;
 
+  int n;
+
   int* visite; // tableau de booleen de taille n (n = nb de sommets)
   int* explore; // idem
 

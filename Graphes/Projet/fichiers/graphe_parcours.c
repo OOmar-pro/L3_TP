@@ -11,10 +11,14 @@ int graphe_parcours_profondeur(graphe *g, graphe **arbo, int **suff, int *prio)
   struct parcours *p = pc_init(g,cs,prio);
 
   if(p == NULL){
+    pc_detruire(p);
     return -1;
   }
 
+  pc_parcourir(p);
+
   pc_detruire(p);
+  return 0;
 }
 
 int graphe_parcours_largeur(graphe *g, graphe **arbo, int **suff, int *prio)

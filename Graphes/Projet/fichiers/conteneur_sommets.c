@@ -5,16 +5,16 @@
 #include <stdlib.h>
 
 
-/* définition du type conteneur_sommets */
+// /* définition du type conteneur_sommets */
 
-struct conteneur_sommets {
-  void *donnees;
-  int (*est_vide)(void *);
-  void (*ajouter)(void *, int);
-  void (*supprimer)(void *);
-  int (*choisir)(void *);
-  void (*detruire)(void *);
-};
+// struct conteneur_sommets {
+//   void *donnees;
+//   int (*est_vide)(void *);
+//   void (*ajouter)(void *, int);
+//   void (*supprimer)(void *);
+//   int (*choisir)(void *);
+//   void (*detruire)(void *);
+// };
 
 /* Partie générique */
 

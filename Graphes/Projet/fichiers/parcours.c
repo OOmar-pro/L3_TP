@@ -7,17 +7,18 @@
 struct parcours *pc_init(graphe *g, conteneur_sommets *cs, int *prio)
 {
   struct parcours *p;
-  int n = graphe_get_n(g);
+  p = malloc(sizeof(struct parcours));
+
+  p->n = graphe_get_n(g);
 
   p->conteneur = cs;
   p->g = g;
-  p->arbo = graphe_creer(n,0);
+  p->arbo = graphe_creer(p->n,0);
 
   if(prio == NULL){
-    
-    prio = calloc(n, sizeof(int));
+    prio = malloc(p->n * sizeof(int));
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < p->n; i++)
     {
       prio[i] = i;
     }   
@@ -26,14 +27,21 @@ struct parcours *pc_init(graphe *g, conteneur_sommets *cs, int *prio)
   p->prio = prio;
   p->dernier_prio = 0;
 
-  p->visite = calloc(n, sizeof(int));
-  p->explore = calloc(n, sizeof(int));
+  p->visite = malloc(p->n * sizeof(int));
+  p->explore = malloc(p->n * sizeof(int));
+
+  for(int i = 0; i < p->n; i++){
+    p->visite[i] = 0;
+    p->explore[i] = 0;
+  }
 
   if(p->visite == NULL || p->explore == NULL)
   {
     pc_detruire(p);
     return NULL;
   }
+
+  return p;
 
 }
 
@@ -49,18 +57,26 @@ void pc_detruire(struct parcours *p)
 
 int pc_choisir_racine(struct parcours *p)
 {
-  for (int i = p->dernier_prio; i < (sizeof(p->prio)/sizeof(int)); i++)
+  for (int i = p->dernier_prio; i < p->n; i++)
   {
     if(p->visite[p->prio[i]] == 0){
       p->dernier_prio = i;
       return p->prio[i];
     }
   }
+
+  return -1;
 }
 
 int pc_est_fini(struct parcours *p)
 {
-  return pc_conteneur_est_vide(p);
+  for(int i = 0; i < p->n; i++){
+    if(p->explore[i] == 0){
+      return 0;
+    }
+  }
+
+  return 1;
 }
 
 void pc_marquer_comme_visite(struct parcours *p, int sommet)
@@ -95,7 +111,7 @@ void pc_supprimer_du_conteneur(struct parcours *p)
 
 int pc_choisir_dans_conteneur(struct parcours *p)
 {
-  p->conteneur->choisir(p->conteneur->donnees);
+  return p->conteneur->choisir(p->conteneur->donnees);
 }
 
 msuc *pc_prochain_msuc(struct parcours *p, int sommet)
@@ -112,40 +128,46 @@ int pc_est_visite(struct parcours *p, int sommet)
 
 void pc_parcourir_depuis_sommet(struct parcours *p, int r)
 {
-  int v,w;
-  msuc *m;
+  int v;
+  msuc *m, *w;
+
+  pc_ajouter_dans_conteneur(p, r);
+  pc_marquer_comme_visite(p, r);
 
   while (pc_conteneur_est_vide(p) == 0)
   {
     v = pc_choisir_dans_conteneur(p);
     m = pc_prochain_msuc(p, v);
 
-    w = msuc_sommet(msuc_suivant(m));
+    w = msuc_suivant(m);
 
-    if(w == NULL || pc_est_visite(p,w))
+    if(w == NULL || pc_est_visite(p,msuc_sommet(w)))
     {
       pc_marquer_comme_explore(p,v);
       pc_supprimer_du_conteneur(p);
     }
     else
     {
-      pc_marquer_comme_visite(p,w);
-      pc_ajouter_dans_conteneur(p,w);
+      pc_marquer_comme_visite(p,msuc_sommet(w));
+      pc_ajouter_dans_conteneur(p,msuc_sommet(w));
     }
   }
 }
 
 void pc_parcourir(struct parcours *p)
 {
-  int r = pc_choisir_racine(p);
+  int r;
 
-  while (pc_est_fini(p) == 0)
-  {
-    pc_ajouter_dans_conteneur(p, r);
-    pc_marquer_comme_visite(p, r);
+  //int i = 0;
 
+  
+  do{
+    r = pc_choisir_racine(p);
+
+    //printf("i= %d",i);
+    //i ++;
     pc_parcourir_depuis_sommet(p,r);
-  }
+  }while (pc_est_fini(p) == 0);
   
 }
 

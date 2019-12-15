@@ -14,6 +14,17 @@
  */
 typedef struct conteneur_sommets conteneur_sommets ; 
 
+/* définition du type conteneur_sommets */
+
+struct conteneur_sommets {
+  void *donnees;
+  int (*est_vide)(void *);
+  void (*ajouter)(void *, int);
+  void (*supprimer)(void *);
+  int (*choisir)(void *);
+  void (*detruire)(void *);
+};
+
 /* Partie générique */
 /**
  * \brief Retourne 1 si le conteneur est vide, 0 sinon.
