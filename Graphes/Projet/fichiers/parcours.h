@@ -32,8 +32,8 @@ struct parcours {
 
   int dernier_prio; //garde en memoire l'index du dernier sommet prioritaire choisi
   
-  // int pref;
-  // int suff;
+  file* pref; // ordre dans lequelle les sommets sont visites
+  file* suff; // ordre dans lequelle les sommets sont explores
 
 };
 

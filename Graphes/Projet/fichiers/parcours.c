@@ -81,6 +81,7 @@ int pc_est_fini(struct parcours *p)
 
 void pc_marquer_comme_visite(struct parcours *p, int sommet)
 {
+  file_enfiler(p->pref, sommet);
   p->visite[sommet] = 1;
 }
 
@@ -91,6 +92,7 @@ void pc_marquer_comme_visite_depuis(struct parcours *p, int sommet, int depuis)
 
 void pc_marquer_comme_explore(struct parcours *p, int sommet)
 {
+  file_enfiler(p->suff, sommet);
   p->explore[sommet] = 1;
 }
 
@@ -116,7 +118,7 @@ int pc_choisir_dans_conteneur(struct parcours *p)
 
 msuc *pc_prochain_msuc(struct parcours *p, int sommet)
 {
-  msuc* m = msuc_suivant(p->arbo->tab_sucs[sommet]);
+  msuc* m = msuc_suivant(p->g->tab_sucs[sommet]);
 
   return m;
 }
