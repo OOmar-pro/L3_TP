@@ -8,7 +8,7 @@ CREATE TABLE etudiants(
     ANNEE NUMBER
 );
 
--- DESC etudiants;
+DESC etudiants;
 
 -- INSERT INTO etudiants VALUES (0,'debbache', 'karim', 'M', CURRENT_DATE, '10000', '1999');
 -- INSERT into etudiants values (4,'durand', 'sophie', 'F', CURRENT_DATE, '200000', '1998');
