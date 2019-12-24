@@ -1,0 +1,30 @@
++==============================+
+|       Donnes a utiliser      |
+|              sur             |
+|        Mocodo online         |
++==============================+
+
+
+REALISATEUR: IdRealisateur, Nom, Prenom
+REALISE ,1N REALISATEUR, 1N EPISODE:
+NOTE: IdNote, Note, Commentaire, Date
+NOTE_PAR ,0N UTILISATEUR, 11 NOTE:
+UTILISATEUR: IdUtilisateur, Pseudo, DateInscrit, Age, Sexe
+
+JOUE ,1N EPISODE, 1N ACTEUR:
+EPISODE: IdEpisode, Titre, Duree, DatePremDiff, Resume
+NOTE_DE , 1N NOTE, 0N SERIE, 0N EPISODE:
+DE ,1N GENRE, 1N SERIE:
+GENRE: IdGenre, LibGenre
+
+ACTEUR: IdActeur, Nom, Prenom
+SAISON ,1N SERIE, 1N EPISODE:  NumSaison
+SERIE :IdSerie, Titre, Annee, Pays, DateCreation
+CREE , 1N SERIE, 1N CREATEUR:
+CREATEUR: IdCreateur, Nom, Prenom
+
+MESSAGE: IdMsg, IdExp, IdDest, IdReponse, Titre, Message
+ASSOCIE, 11 MESSAGE, 0N SERIE:
+PRODUIT, 1N SERIE, 1N PRODUCTEUR:
+PRODUCTEUR: IdProducteur, Nom, Prenom
+EST, 11 CREATEUR, 01 PRODUCTEUR:

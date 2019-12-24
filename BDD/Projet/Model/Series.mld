@@ -1,0 +1,45 @@
+%%mocodo
+:
+REALISATEUR: IdRealisateur, Nom, Prenom
+:
+REALISE: #IdRealisateur->REALISATEUR->IdRealisateur, _#IdEpisode->EPISODE->IdEpisode
+:
+NOTE: IdNote, Note, Commentaire, Date, #IdUtilisateur->UTILISATEUR->IdUtilisateur
+:::
+UTILISATEUR: IdUtilisateur, Pseudo, DateInscrit, Age, Sexe
+:
+
+
+:
+JOUE: #IdEpisode->EPISODE->IdEpisode, _#IdActeur->ACTEUR->IdActeur
+:
+EPISODE: IdEpisode, Titre, Duree, DatePremDiff, Resume
+:
+NOTE_DE: #IdNote->NOTE->IdNote, _#IdSerie->SERIE->IdSerie, _#IdEpisode->EPISODE->IdEpisode
+:
+DE: #IdGenre->GENRE->IdGenre, _#IdSerie->SERIE->IdSerie
+:
+GENRE: IdGenre, LibGenre
+:
+
+
+:
+ACTEUR: IdActeur, Nom, Prenom
+:
+SAISON: #IdSerie->SERIE->IdSerie, _#IdEpisode->EPISODE->IdEpisode, NumSaison
+:
+SERIE: IdSerie, Titre, Annee, Pays, DateCreation
+:
+CREE: #IdSerie->SERIE->IdSerie, _#IdCreateur->CREATEUR->IdCreateur
+:
+CREATEUR: IdCreateur, Nom, Prenom, #IdProducteur->PRODUCTEUR->IdProducteur
+:
+
+
+:
+MESSAGE: IdMsg, IdExp, IdDest, IdReponse, Titre, Message, #IdSerie->SERIE->IdSerie
+:::
+PRODUIT: #IdSerie->SERIE->IdSerie, _#IdProducteur->PRODUCTEUR->IdProducteur
+:
+PRODUCTEUR: IdProducteur, Nom, Prenom
+:::

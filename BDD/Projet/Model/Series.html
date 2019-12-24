@@ -1,0 +1,141 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+  #mld .relation { font-variant: small-caps; font-weight: bold }
+  #mld .primary { text-decoration: underline }
+  #mld .foreign { font-style: oblique }
+  #mld .normal { }
+</style>
+</head>
+<body>
+<div id='mld'>
+<div>
+  <span class='relation'>REALISATEUR</span> (
+    <span class='primary'>IdRealisateur</span>,
+    <span class='normal'>Nom</span>,
+    <span class='normal'>Prenom</span>
+  )
+</div>
+<div>
+  <span class='relation'>REALISE</span> (
+    <span class='foreign primary'>IdRealisateur</span>,
+    <span class='foreign primary'>IdEpisode</span>
+  )
+</div>
+<div>
+  <span class='relation'>NOTE</span> (
+    <span class='primary'>IdNote</span>,
+    <span class='normal'>Note</span>,
+    <span class='normal'>Commentaire</span>,
+    <span class='normal'>Date</span>,
+    <span class='foreign'>IdUtilisateur</span>
+  )
+</div>
+<div>
+  <span class='relation'>UTILISATEUR</span> (
+    <span class='primary'>IdUtilisateur</span>,
+    <span class='normal'>Pseudo</span>,
+    <span class='normal'>DateInscrit</span>,
+    <span class='normal'>Age</span>,
+    <span class='normal'>Sexe</span>
+  )
+</div>
+<div>
+  <span class='relation'>JOUE</span> (
+    <span class='foreign primary'>IdEpisode</span>,
+    <span class='foreign primary'>IdActeur</span>
+  )
+</div>
+<div>
+  <span class='relation'>EPISODE</span> (
+    <span class='primary'>IdEpisode</span>,
+    <span class='normal'>Titre</span>,
+    <span class='normal'>Duree</span>,
+    <span class='normal'>DatePremDiff</span>,
+    <span class='normal'>Resume</span>
+  )
+</div>
+<div>
+  <span class='relation'>NOTE_DE</span> (
+    <span class='foreign primary'>IdNote</span>,
+    <span class='foreign primary'>IdSerie</span>,
+    <span class='foreign primary'>IdEpisode</span>
+  )
+</div>
+<div>
+  <span class='relation'>DE</span> (
+    <span class='foreign primary'>IdGenre</span>,
+    <span class='foreign primary'>IdSerie</span>
+  )
+</div>
+<div>
+  <span class='relation'>GENRE</span> (
+    <span class='primary'>IdGenre</span>,
+    <span class='normal'>LibGenre</span>
+  )
+</div>
+<div>
+  <span class='relation'>ACTEUR</span> (
+    <span class='primary'>IdActeur</span>,
+    <span class='normal'>Nom</span>,
+    <span class='normal'>Prenom</span>
+  )
+</div>
+<div>
+  <span class='relation'>SAISON</span> (
+    <span class='foreign primary'>IdSerie</span>,
+    <span class='foreign primary'>IdEpisode</span>,
+    <span class='normal'>NumSaison</span>
+  )
+</div>
+<div>
+  <span class='relation'>SERIE</span> (
+    <span class='primary'>IdSerie</span>,
+    <span class='normal'>Titre</span>,
+    <span class='normal'>Annee</span>,
+    <span class='normal'>Pays</span>,
+    <span class='normal'>DateCreation</span>
+  )
+</div>
+<div>
+  <span class='relation'>CREE</span> (
+    <span class='foreign primary'>IdSerie</span>,
+    <span class='foreign primary'>IdCreateur</span>
+  )
+</div>
+<div>
+  <span class='relation'>CREATEUR</span> (
+    <span class='primary'>IdCreateur</span>,
+    <span class='normal'>Nom</span>,
+    <span class='normal'>Prenom</span>,
+    <span class='foreign'>IdProducteur</span>
+  )
+</div>
+<div>
+  <span class='relation'>MESSAGE</span> (
+    <span class='primary'>IdMsg</span>,
+    <span class='normal'>IdExp</span>,
+    <span class='normal'>IdDest</span>,
+    <span class='normal'>IdReponse</span>,
+    <span class='normal'>Titre</span>,
+    <span class='normal'>Message</span>,
+    <span class='foreign'>IdSerie</span>
+  )
+</div>
+<div>
+  <span class='relation'>PRODUIT</span> (
+    <span class='foreign primary'>IdSerie</span>,
+    <span class='foreign primary'>IdProducteur</span>
+  )
+</div>
+<div>
+  <span class='relation'>PRODUCTEUR</span> (
+    <span class='primary'>IdProducteur</span>,
+    <span class='normal'>Nom</span>,
+    <span class='normal'>Prenom</span>
+  )
+</div>
+</div>
+</body>
+</html>
