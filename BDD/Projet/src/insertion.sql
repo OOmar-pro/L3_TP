@@ -88,3 +88,97 @@ INSERT INTO PRODUIT VALUES(8, 11);
 INSERT INTO PRODUIT VALUES(9, 12);
 INSERT INTO PRODUIT VALUES(10, 1);
 INSERT INTO PRODUIT VALUES(11, 1);
+
+-- OZ --
+INSERT INTO EPISODE VALUES(1,'Routine carcérale', 1518, '12/07/1997', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(2,'Visite conjugale', 1740, '13/07/1997', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(3,'Dans la confidence des Dieux', 1312, '14/07/1997', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(4,'Peine capitale', 1505, '15/07/1997', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(5,'Vivre sainement', 1612, '16/07/1997', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(6,'À ta santé', 1500, '17/07/1997', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(7,'Plan B', 1735, '18/07/1997', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(8,'Partie de dames', 1761, '19/07/1997', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+
+INSERT INTO EPISODE VALUES(9,'L''Indice', 1512, '12/07/1998', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(10,'Tribus ancestrales', 1420, '13/07/1998', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(11,'De grands hommes', 1670, '14/07/1998', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(12,'Sans appel', 1790, '15/07/1998', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(13,'Histoire de famille', 1325, '16/07/1998', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(14,'Lits jumeaux', 1492, '17/07/1998', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(15,'La Ferme des animaux', 1679, '18/07/1998', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(16,'S''évader d''Oz', 1325, '19/07/1998', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+
+
+INSERT INTO SAISON VALUES(2,1,1);
+INSERT INTO SAISON VALUES(2,2,1);
+INSERT INTO SAISON VALUES(2,3,1);
+INSERT INTO SAISON VALUES(2,4,1);
+INSERT INTO SAISON VALUES(2,5,1);
+INSERT INTO SAISON VALUES(2,6,1);
+INSERT INTO SAISON VALUES(2,7,1);
+INSERT INTO SAISON VALUES(2,8,1);
+
+INSERT INTO SAISON VALUES(2,9,2);
+INSERT INTO SAISON VALUES(2,10,2);
+INSERT INTO SAISON VALUES(2,11,2);
+INSERT INTO SAISON VALUES(2,12,2);
+INSERT INTO SAISON VALUES(2,13,2);
+INSERT INTO SAISON VALUES(2,14,2);
+INSERT INTO SAISON VALUES(2,15,2);
+INSERT INTO SAISON VALUES(2,16,2);
+
+
+-- PLATANE --
+INSERT INTO EPISODE VALUES(17,'La fois où il a eu l''accident', 1567, '05/09/2011', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(18,'La fois où il a voulu faire un film sérieux', 1685, '05/09/2011', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(19,'La fois où il a eu l''idée de faire : La Môme 2.0 Next Generation', 1326, '05/09/2011', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(20,'La fois où Monica Bellucci a failli signer', 1850, '12/09/2011', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(21,'La fois où il aimait une Chinoise… ou une Vietnamienne', 1895, '12/09/2011', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(22,'La fois où il a voulu soigner sa mère mais trop tard', 1764, '12/09/2011', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(23,'La fois où il s''est fait arrêter par le flic… Là', 1423, '19/09/2011', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(24,'La fois où il a changé de carte de visite', 1468, '19/09/2011', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(25,'La fois où il a eu la foi dans son couple', 1385, '19/09/2011', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(26,'La fois où il était à deux doigts de conclure', 1473, '26/09/2011', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(27,'La fois où il a fait de la garde à vue à Lyon', 1863, '26/09/2011', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(28,'La fois où il était ruiné', 1739, '26/09/2011', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+
+
+INSERT INTO EPISODE VALUES(29,'La fois où il s''est embrouillé avec un arbre', 1420, '16/09/2013', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(30,'La fois où il avait fait waou en famille', 1573, '16/09/2013', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(31,'La fois où il était desperate', 1251, '16/09/2013', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(32,'La fois où il était une véritable cocotte minute', 1365, '23/09/2013', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(33,'La fois où il a monté la tente', 1687, '23/09/2013', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(34,'La fois où il y avait du parfum dans le cockpit', 1632, '23/09/2013', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(35,'La fois où il a travaillé avec Fififty Cents', 1732, '30/09/2013', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(36,'La fois où il a cru que le signe c''était un zodiac', 1320, '30/09/2013', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(37,'La fois où il a prié Wall-e', 1510, '30/09/2013', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(38,'La fois où il a fait du quatre quatre gris', 1621, '07/10/2013', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(39,'La fois où il était découvreur de un black', 1862, '07/10/2013', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(40,'La fois où il a traversé le Styx aux îles des Saintes', 1871, '07/10/2013', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+
+
+INSERT INTO SAISON VALUES(4,17,1);
+INSERT INTO SAISON VALUES(4,18,1);
+INSERT INTO SAISON VALUES(4,19,1);
+INSERT INTO SAISON VALUES(4,20,1);
+INSERT INTO SAISON VALUES(4,21,1);
+INSERT INTO SAISON VALUES(4,22,1);
+INSERT INTO SAISON VALUES(4,23,1);
+INSERT INTO SAISON VALUES(4,24,1);
+INSERT INTO SAISON VALUES(4,25,1);
+INSERT INTO SAISON VALUES(4,26,1);
+INSERT INTO SAISON VALUES(4,27,1);
+INSERT INTO SAISON VALUES(4,28,1);
+
+INSERT INTO SAISON VALUES(4,29,2);
+INSERT INTO SAISON VALUES(4,30,2);
+INSERT INTO SAISON VALUES(4,31,2);
+INSERT INTO SAISON VALUES(4,32,2);
+INSERT INTO SAISON VALUES(4,33,2);
+INSERT INTO SAISON VALUES(4,34,2);
+INSERT INTO SAISON VALUES(4,35,2);
+INSERT INTO SAISON VALUES(4,36,2);
+INSERT INTO SAISON VALUES(4,37,2);
+INSERT INTO SAISON VALUES(4,38,2);
+INSERT INTO SAISON VALUES(4,39,2);
+INSERT INTO SAISON VALUES(4,40,2);

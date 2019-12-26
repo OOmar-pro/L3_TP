@@ -56,7 +56,7 @@ CREATE TABLE "JOUE" (
 
 CREATE TABLE "EPISODE" (
   "idepisode" NUMBER NOT NULL ,
-  "titre" VARCHAR(42),
+  "titre" VARCHAR(255),
   "duree" NUMBER,
   "datepremdiff" DATE,
   "resume" VARCHAR(255),

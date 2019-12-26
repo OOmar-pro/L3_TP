@@ -23,15 +23,19 @@ SELECT count("idserie") NbSerie FROM SERIE WHERE EXTRACT(YEAR FROM "annee") BETW
 
 -- [6]Quelles séries sont à la fois du genre «Comédie» et «Science-Fiction»?
 
-SELECT "titre" FROM SERIE s JOIN DE d ON s."idserie" = d."idserie" WHERE d."idgenre" = 1;
+SELECT "titre" FROM SERIE s JOIN DE d ON s."idserie" = d."idserie" WHERE d."idgenre" = 1
 INTERSECT
 SELECT "titre" FROM SERIE s JOIN DE d ON s."idserie" = d."idserie" WHERE d."idgenre" = 3;
 
 -- [7]Quels sont les séries produites par «Spielberg», affichés par date décroissantes?
 
+SELECT "titre" FROM SERIE s JOIN PRODUIT p ON s."idserie" = p."idserie" WHERE p."idproducteur" = 1 ORDER BY "annee" DESC; 
 
 -- [8]Afficher les séries Américaines par ordre de nombre de saisons croissant.
 
+--SELECT s."titre", count(sa."numsaison") FROM SERIE s JOIN SAISON sa ON s."idserie" = sa."idserie" WHERE "pays" = 'Etats-Unis' GROUP BY s."titre" ORDER BY count(sa."numsaison") ASC;
+
+SELECT "titre", count("numsaison") FROM (SELECT DISTINCT "titre", "numsaison" FROM SERIE JOIN SAISON ON SERIE."idserie" = SAISON."idserie" ) GROUP BY "titre", "numsaison";
 
 -- [9]Quelle série a le plus d’épisodes?
 
