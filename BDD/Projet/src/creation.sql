@@ -32,11 +32,14 @@ CREATE TABLE "REALISE" (
 
 CREATE TABLE "NOTE" (
   "idnote" NUMBER NOT NULL ,
+  "idserie" NUMBER DEFAULT NULL,
+  "idepisode" NUMBER DEFAULT NULL,
   "note" NUMBER NOT NULL CHECK ("note" <= 5 AND "note" >= 0),
   "commentaire" VARCHAR(255),
   "date" DATE DEFAULT SYSDATE,
-  "idutilisateur" NUMBER,
-  PRIMARY KEY ("idnote")
+  "idutilisateur" NUMBER NOT NULL,
+  PRIMARY KEY ("idnote"),
+  CONSTRAINT check_idserie_idepisode CHECK ("idepisode" IS NOT NULL OR "idserie" IS NOT NULL) 
 );
 
 CREATE TABLE "UTILISATEUR" (

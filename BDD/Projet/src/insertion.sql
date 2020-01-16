@@ -9,6 +9,7 @@ INSERT INTO SERIE VALUES(8, 'Rick et Morty', '01/01/2013', 'Etats-Unis', '02/12/
 INSERT INTO SERIE VALUES(9, 'Futurama', '01/01/1999', 'Etats-Unis', '28/03/2013');
 INSERT INTO SERIE VALUES(10, 'The Pacific', '01/01/2010', 'Etats-Unis', '14/03/2010');
 INSERT INTO SERIE VALUES(11, 'Animaniacs', '01/01/1993', 'Etats-Unis', '13/09/1993');
+INSERT INTO SERIE VALUES(12, 'Big Bang Theory', '01/01/2007', 'Etats-Unis', '24/09/2007');
 
 
 INSERT INTO GENRE VALUES(1, 'Comédie');
@@ -61,6 +62,9 @@ INSERT INTO DE VALUES(10, 14);
 
 INSERT INTO DE VALUES(11, 12);
 
+INSERT INTO DE VALUES(12, 1);
+INSERT INTO DE VALUES(12, 7);
+
 
 INSERT INTO PRODUCTEUR VALUES(1, 'Spielberg', 'Steven');
 INSERT INTO PRODUCTEUR VALUES(2, 'Daniel', 'Sean');
@@ -74,6 +78,7 @@ INSERT INTO PRODUCTEUR VALUES(9, 'Ikeguchi', 'Kazuhiko');
 INSERT INTO PRODUCTEUR VALUES(10, 'Michels', 'Pete');
 INSERT INTO PRODUCTEUR VALUES(11, 'Archer', 'Wes');
 INSERT INTO PRODUCTEUR VALUES(12, 'Groening', 'Matt');
+INSERT INTO PRODUCTEUR VALUES(13, 'Lorre', 'Chuck');
 
 INSERT INTO PRODUIT VALUES(1, 2);
 INSERT INTO PRODUIT VALUES(2, 3);
@@ -88,6 +93,7 @@ INSERT INTO PRODUIT VALUES(8, 11);
 INSERT INTO PRODUIT VALUES(9, 12);
 INSERT INTO PRODUIT VALUES(10, 1);
 INSERT INTO PRODUIT VALUES(11, 1);
+INSERT INTO PRODUIT VALUES(12, 13);
 
 -- OZ --
 INSERT INTO EPISODE VALUES(1,'Routine carcérale', 1518, '12/07/1997', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
@@ -182,3 +188,54 @@ INSERT INTO SAISON VALUES(4,37,2);
 INSERT INTO SAISON VALUES(4,38,2);
 INSERT INTO SAISON VALUES(4,39,2);
 INSERT INTO SAISON VALUES(4,40,2);
+
+-- BIG BANG THEORY --
+
+INSERT INTO EPISODE VALUES(41,'La Nouvelle Voisine des surdoués', 1420, '18/10/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(42,'Des voisins encombrants ', 1573, '18/10/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(43,'Le Corollaire de pattes-de-velours', 1251, '25/10/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(44,'Les Poissons luminescents', 1365, '25/10/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(45,'Le Postulat du hamburger', 1687, '01/11/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(46,'Les Allumés d’Halloween', 1632, '01/11/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(47,'Le Paradoxe du ravioli chinois', 1732, '08/11/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(48,'L''Effet sauterelle', 1320, '08/11/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(49,'La Polarisation Cooper-Hofstadter', 1510, '15/11/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(50,'La Descente aux enfers du sujet Loobenfeld', 1621, '15/11/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(51,'Alerte aux microbes', 1862, '22/11/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(52,'La Dualité de Jérusalem', 1871, '22/11/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(53,'La Conjecture du Batbocal', 1366, '29/11/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(54,'La Machine incroyable', 1871, '29/11/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(55,'La Sœur jumelle', 1871, '06/12/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(56,'Réaction !', 1871, '06/12/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(57,'La Rupture', 1871, '06/12/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+
+
+INSERT INTO SAISON VALUES(12,41,1);
+INSERT INTO SAISON VALUES(12,42,1);
+INSERT INTO SAISON VALUES(12,43,1);
+INSERT INTO SAISON VALUES(12,44,1);
+INSERT INTO SAISON VALUES(12,45,1);
+INSERT INTO SAISON VALUES(12,46,1);
+INSERT INTO SAISON VALUES(12,47,1);
+INSERT INTO SAISON VALUES(12,48,1);
+INSERT INTO SAISON VALUES(12,49,1);
+INSERT INTO SAISON VALUES(12,50,1);
+INSERT INTO SAISON VALUES(12,51,1);
+INSERT INTO SAISON VALUES(12,52,1);
+INSERT INTO SAISON VALUES(12,53,1);
+INSERT INTO SAISON VALUES(12,54,1);
+INSERT INTO SAISON VALUES(12,55,1);
+INSERT INTO SAISON VALUES(12,56,1);
+INSERT INTO SAISON VALUES(12,57,1);
+
+-- UTILISATEUR --
+
+INSERT INTO UTILISATEUR VALUES(1, 'Ldupont', SYSDATE, 20, 'HOMME');
+INSERT INTO UTILISATEUR VALUES(2, 'Hdurand', SYSDATE, 65, 'FEMME');
+INSERT INTO UTILISATEUR VALUES(3, 'Tbagtan', SYSDATE, 41, 'HOMME');
+INSERT INTO UTILISATEUR VALUES(4, 'Dconjel', SYSDATE, 18, 'FEMME');
+INSERT INTO UTILISATEUR VALUES(5, 'Ataire', SYSDATE, 32, 'FEMME');
+
+-- NOTE --
+
+INSERT INTO NOTE VALUES(1, 4, 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit');

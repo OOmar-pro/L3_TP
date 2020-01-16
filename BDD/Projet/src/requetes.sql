@@ -33,14 +33,14 @@ SELECT "titre" FROM SERIE s JOIN PRODUIT p ON s."idserie" = p."idserie" WHERE p.
 
 -- [8]Afficher les séries Américaines par ordre de nombre de saisons croissant.
 
---SELECT s."titre", count(sa."numsaison") FROM SERIE s JOIN SAISON sa ON s."idserie" = sa."idserie" WHERE "pays" = 'Etats-Unis' GROUP BY s."titre" ORDER BY count(sa."numsaison") ASC;
+SELECT "titre", count("numsaison") FROM (SELECT DISTINCT "titre", "numsaison" FROM SERIE JOIN SAISON ON SERIE."idserie" = SAISON."idserie" ) GROUP BY "titre" ORDER BY count("numsaison") ASC;
 
-SELECT "titre", count("numsaison") FROM (SELECT DISTINCT "titre", "numsaison" FROM SERIE JOIN SAISON ON SERIE."idserie" = SAISON."idserie" ) GROUP BY "titre", "numsaison";
+-- [9]Quelle série a le plus d’épisodes? ! ! ! ! TODO ! ! ! ! 
 
--- [9]Quelle série a le plus d’épisodes?
-
+-- SELECT Titre, max(NbEspisode) FROM (SELECT s."titre" as Titre, count("idepisode") as NbEspisode FROM SERIE s JOIN SAISON sa ON s."idserie" = sa."idserie" GROUP BY s."titre") GROUP BY Titre;
 
 -- [10]La série «Big Bang Theory» est-elle plus appréciée des hommes ou des femmes?
+
 
 
 -- [11]Affichez les séries qui ont une note moyenne inférieure à 5, classé par note.
