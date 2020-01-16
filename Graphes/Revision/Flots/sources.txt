@@ -1,0 +1,5 @@
+>"Flots 1 : introduction et notions de base des flots (graphes)"
+https://www.youtube.com/watch?v=TgT5MYWI2n4
+
+>"Flots 2 : l'algorithme de Ford-Fulkerson pour construire un flot max.dans un graphe"
+https://www.youtube.com/watch?v=eL3fTl4mykY
