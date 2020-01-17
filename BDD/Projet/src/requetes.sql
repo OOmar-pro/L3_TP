@@ -44,6 +44,7 @@ SELECT s."titre", count("numsaison") as nbSaison FROM SERIE s NATURAL JOIN (SELE
 
 
 
+
 -- [11]Affichez les séries qui ont une note moyenne inférieure à 5, classé par note.
 
 
