@@ -42,17 +42,22 @@ SELECT s."titre", count("numsaison") as nbSaison FROM SERIE s NATURAL JOIN (SELE
 
 -- [10]La série «Big Bang Theory» est-elle plus appréciée des hommes ou des femmes? 
 
-
-
+-- SELECT "sexe", MAX(moyNote) FROM 
+--     (SELECT "idserie", u."sexe", avg(n."note") as moyNote FROM SERIE s NATURAL JOIN NOTE n NATURAL JOIN UTILISATEUR u WHERE s."titre" = 'Big Bang Theory' GROUP BY u."sexe", "idserie")
+-- GROUP BY "idserie", "sexe";
+-- Probleme ORA-00937: la fonction de groupe ne porte pas sur un groupe simple
 
 -- [11]Affichez les séries qui ont une note moyenne inférieure à 5, classé par note.
 
+SELECT s."titre" FROM SERIE s NATURAL JOIN NOTE n GROUP BY s."titre" HAVING avg(n."note") < 5 ORDER BY avg(n."note") ASC;
 
 -- [12]Pour chaque série, afficher le commentaire correspondant à la meilleure note.
 
+SELECT s."titre", max(n."note"), n."commentaire" FROM NOTE n NATURAL JOIN SERIE s GROUP BY s."titre", n."commentaire";
 
 -- [13]Affichez les séries qui ont une note moyenne sur leurs épisodes supérieure à 8.
 
+SELECT "idepisode" FROM EPISODE NATURAL JOIN NOTE n WHERE "idserie" IS NULL GROUP BY "idepisode" HAVING avg(n."note") > 8;
 
 -- [14]Afficher lenombre moyen d’épisodes des séries avec l’acteur«Bryan Cranston».
 

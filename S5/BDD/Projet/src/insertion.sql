@@ -230,12 +230,38 @@ INSERT INTO SAISON VALUES(12,57,1);
 
 -- UTILISATEUR --
 
-INSERT INTO UTILISATEUR VALUES(1, 'Ldupont', SYSDATE, 20, 'HOMME');
-INSERT INTO UTILISATEUR VALUES(2, 'Hdurand', SYSDATE, 65, 'FEMME');
+INSERT INTO UTILISATEUR VALUES(1, 'Cleure', SYSDATE, 20, 'HOMME');
+INSERT INTO UTILISATEUR VALUES(2, 'Klecaire', SYSDATE, 65, 'FEMME');
 INSERT INTO UTILISATEUR VALUES(3, 'Tbagtan', SYSDATE, 41, 'HOMME');
 INSERT INTO UTILISATEUR VALUES(4, 'Dconjel', SYSDATE, 18, 'FEMME');
 INSERT INTO UTILISATEUR VALUES(5, 'Ataire', SYSDATE, 32, 'FEMME');
 
 -- NOTE --
 
-INSERT INTO NOTE VALUES(1, 4, 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit');
+INSERT INTO NOTE VALUES(1, 1, NULL, 10, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '04/06/2018', 2);
+INSERT INTO NOTE VALUES(2, 3, NULL, 5, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '06/12/2018', 4);
+INSERT INTO NOTE VALUES(3, 12, NULL, 3, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '07/11/2019', 5);
+INSERT INTO NOTE VALUES(4, 12, NULL, 7, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '15/10/2019', 1);
+INSERT INTO NOTE VALUES(5, 12, NULL, 4, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '31/07/2019', 3);
+INSERT INTO NOTE VALUES(6, 12, NULL, 8, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '26/01/2019', 5);
+INSERT INTO NOTE VALUES(7, 12, NULL, 6, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '02/03/2019', 5);
+INSERT INTO NOTE VALUES(8, 12, NULL, 5, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '10/06/2019', 1);
+INSERT INTO NOTE VALUES(9, 4, NULL, 10, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '22/05/2019', 2);
+INSERT INTO NOTE VALUES(10, 3, NULL, 1, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '14/01/2020', 3);
+INSERT INTO NOTE VALUES(11, 12, NULL, 9, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '12/01/2020', 4);
+INSERT INTO NOTE VALUES(12, 12, NULL, 3, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '01/01/2020', 5);
+INSERT INTO NOTE VALUES(13, 2, NULL, 4, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '01/01/2020', 2);
+
+INSERT INTO NOTE VALUES(14,  NULL, 51,  10, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '04/06/2018', 2);
+INSERT INTO NOTE VALUES(15,  NULL, 43,  5, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '06/12/2018', 4);
+INSERT INTO NOTE VALUES(16,  NULL, 32, 3, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '07/11/2019', 5);
+INSERT INTO NOTE VALUES(17,  NULL, 22, 7, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '15/10/2019', 1);
+INSERT INTO NOTE VALUES(18,  NULL, 12, 4, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '31/07/2019', 3);
+INSERT INTO NOTE VALUES(19,  NULL, 2, 8, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '26/01/2019', 5);
+INSERT INTO NOTE VALUES(20,  NULL, 20, 6, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '02/03/2019', 5);
+INSERT INTO NOTE VALUES(21,  NULL, 12, 5, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '10/06/2019', 1);
+INSERT INTO NOTE VALUES(22,  NULL, 40,  10, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '22/05/2019', 2);
+INSERT INTO NOTE VALUES(23, NULL, 47,  1, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '14/01/2020', 3);
+INSERT INTO NOTE VALUES(24, NULL, 10, 9, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '12/01/2020', 4);
+INSERT INTO NOTE VALUES(25, NULL, 7, 3, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '01/01/2020', 5);
+INSERT INTO NOTE VALUES(26, NULL, 3,  4, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '01/01/2020', 2);
