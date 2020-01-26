@@ -1,3 +1,4 @@
+-- SERIE --
 INSERT INTO SERIE VALUES(1, 'The Witcher', '01/01/2019', 'Etats-Unis', '22/12/19');
 INSERT INTO SERIE VALUES(2, 'Oz', '01/01/1997', 'Etats-Unis', '12/07/1997');
 INSERT INTO SERIE VALUES(3, 'Le Bureau Des Legendes', '01/01/2015', 'France', '24/04/2015');
@@ -11,6 +12,12 @@ INSERT INTO SERIE VALUES(10, 'The Pacific', '01/01/2010', 'Etats-Unis', '14/03/2
 INSERT INTO SERIE VALUES(11, 'Animaniacs', '01/01/1993', 'Etats-Unis', '13/09/1993');
 INSERT INTO SERIE VALUES(12, 'Big Bang Theory', '01/01/2007', 'Etats-Unis', '24/09/2007');
 
+INSERT INTO SERIE VALUES(13, 'Breaking Bad', '01/01/2008','Etats-Unis', '20/01/2008');
+INSERT INTO SERIE VALUES(14, 'Malcolm', '01/01/2000','Etats-Unis', '09/01/2000');
+
+
+
+-- GENRE --
 
 INSERT INTO GENRE VALUES(1, 'Comédie');
 INSERT INTO GENRE VALUES(2, 'Drame');
@@ -27,6 +34,7 @@ INSERT INTO GENRE VALUES(12, 'Animation');
 INSERT INTO GENRE VALUES(13, 'Guerre');
 INSERT INTO GENRE VALUES(14, 'Biopic');
 
+-- DE --
 
 INSERT INTO DE VALUES(1, 4);
 INSERT INTO DE VALUES(1, 5);
@@ -65,6 +73,12 @@ INSERT INTO DE VALUES(11, 12);
 INSERT INTO DE VALUES(12, 1);
 INSERT INTO DE VALUES(12, 7);
 
+INSERT INTO DE VALUES(13, 2);
+
+INSERT INTO DE VALUES(14, 1);
+INSERT INTO DE VALUES(14, 7);
+
+-- PRODUCTEUR --
 
 INSERT INTO PRODUCTEUR VALUES(1, 'Spielberg', 'Steven');
 INSERT INTO PRODUCTEUR VALUES(2, 'Daniel', 'Sean');
@@ -80,6 +94,12 @@ INSERT INTO PRODUCTEUR VALUES(11, 'Archer', 'Wes');
 INSERT INTO PRODUCTEUR VALUES(12, 'Groening', 'Matt');
 INSERT INTO PRODUCTEUR VALUES(13, 'Lorre', 'Chuck');
 
+INSERT INTO PRODUCTEUR VALUES(14, 'Johnson', 'Mark');
+INSERT INTO PRODUCTEUR VALUES(15, 'Bandur', 'Maggie');
+
+
+-- PRODUIT --
+
 INSERT INTO PRODUIT VALUES(1, 2);
 INSERT INTO PRODUIT VALUES(2, 3);
 INSERT INTO PRODUIT VALUES(3, 4);
@@ -94,6 +114,9 @@ INSERT INTO PRODUIT VALUES(9, 12);
 INSERT INTO PRODUIT VALUES(10, 1);
 INSERT INTO PRODUIT VALUES(11, 1);
 INSERT INTO PRODUIT VALUES(12, 13);
+
+INSERT INTO PRODUIT VALUES(13, 14);
+INSERT INTO PRODUIT VALUES(14, 15);
 
 -- OZ --
 INSERT INTO EPISODE VALUES(1,'Routine carcérale', 1518, '12/07/1997', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
@@ -228,6 +251,66 @@ INSERT INTO SAISON VALUES(12,55,1);
 INSERT INTO SAISON VALUES(12,56,1);
 INSERT INTO SAISON VALUES(12,57,1);
 
+--Breaking Bad--
+
+INSERT INTO EPISODE VALUES(58, 'Chute libre', 2800, '20/01/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(59, 'Le Choix', 2915, '20/01/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(60, 'Dérapage', 2950, '20/01/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(61, 'Retour au sources', 2700, '25/01/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(62, 'Vivre ou survivre', 2500, '25/01/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(63, 'Bluff', 2956, '25/01/2008', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+
+INSERT INTO EPISODE VALUES(64, 'Traqués', 2350, '17/02/2009', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(65, 'Chasse à l homme', 2120, '17/02/2009', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(66, 'Alibi', 2911, '24/02/2009', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(67, 'Au fond du gouffre', 2856, '24/02/2009', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(68, 'Nouveau départ', 2789, '01/03/2009', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(69, 'Règlement de comptes', 1965, '01/03/2009', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+
+INSERT INTO SAISON VALUES(13,58,1);
+INSERT INTO SAISON VALUES(13,59,1);
+INSERT INTO SAISON VALUES(13,60,1);
+INSERT INTO SAISON VALUES(13,61,1);
+INSERT INTO SAISON VALUES(13,62,1);
+INSERT INTO SAISON VALUES(13,63,1);
+
+INSERT INTO SAISON VALUES(13,64,2);
+INSERT INTO SAISON VALUES(13,65,2);
+INSERT INTO SAISON VALUES(13,66,2);
+INSERT INTO SAISON VALUES(13,67,2);
+INSERT INTO SAISON VALUES(13,68,2);
+INSERT INTO SAISON VALUES(13,69,2);
+
+--Malcolm--
+
+INSERT INTO EPISODE VALUES(70, 'Je ne suis pas un monstre', 1500, '20/01/2000', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(71, 'Alerte rouge', 1156, '20/01/2000', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(72, 'Seuls à la maison', 1486, '20/01/2000', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(73, 'Honte', 1478, '25/01/2000', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(74, 'Changement de famille', 1562, '25/01/2000', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(75, 'Poquito Cabeza', 1523, '25/01/2000', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+
+INSERT INTO EPISODE VALUES(76, 'Embouteillage', 1756, '20/05/2001', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(77, 'Il n y a pas d heure pour Halloween', 1454, '20/05/2001', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(78, 'Joyeux anniversaire Loïs', 1452, '01/06/2001', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(79, 'Dîner en ville', 1325, '01/06/2001', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(80, 'Faites vos jeux', 1569, '15/06/2001', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+INSERT INTO EPISODE VALUES(81, 'Le Congrès', 1458, '15/06/2001', 'sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris');
+
+INSERT INTO SAISON VALUES(14,70,1);
+INSERT INTO SAISON VALUES(14,71,1);
+INSERT INTO SAISON VALUES(14,72,1);
+INSERT INTO SAISON VALUES(14,73,1);
+INSERT INTO SAISON VALUES(14,74,1);
+INSERT INTO SAISON VALUES(14,75,1);
+
+INSERT INTO SAISON VALUES(14,76,2);
+INSERT INTO SAISON VALUES(14,77,2);
+INSERT INTO SAISON VALUES(14,78,2);
+INSERT INTO SAISON VALUES(14,79,2);
+INSERT INTO SAISON VALUES(14,80,2);
+INSERT INTO SAISON VALUES(14,81,2);
+
 -- UTILISATEUR --
 
 INSERT INTO UTILISATEUR VALUES(1, 'Cleure', SYSDATE, 20, 'HOMME');
@@ -235,6 +318,8 @@ INSERT INTO UTILISATEUR VALUES(2, 'Klecaire', SYSDATE, 65, 'FEMME');
 INSERT INTO UTILISATEUR VALUES(3, 'Tbagtan', SYSDATE, 41, 'HOMME');
 INSERT INTO UTILISATEUR VALUES(4, 'Dconjel', SYSDATE, 18, 'FEMME');
 INSERT INTO UTILISATEUR VALUES(5, 'Ataire', SYSDATE, 32, 'FEMME');
+INSERT INTO UTILISATEUR VALUES(6, 'Azrod95', SYSDATE, 21, 'FEMME');
+
 
 -- NOTE --
 
@@ -265,3 +350,132 @@ INSERT INTO NOTE VALUES(23, NULL, 47,  1, 'ipsum quia dolor sit amet, consectetu
 INSERT INTO NOTE VALUES(24, NULL, 10, 9, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '12/01/2020', 4);
 INSERT INTO NOTE VALUES(25, NULL, 7, 3, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '01/01/2020', 5);
 INSERT INTO NOTE VALUES(26, NULL, 3,  4, 'ipsum quia dolor sit amet, consectetur, adipisci velit', '01/01/2020', 2);
+
+
+-- ACTEUR --
+
+INSERT INTO ACTEUR VALUES(1, 'Cranston', 'Bryan');
+INSERT INTO ACTEUR VALUES(2, 'Aaron', 'Paul');
+INSERT INTO ACTEUR VALUES(3, 'Cuoco', 'Kaley');
+INSERT INTO ACTEUR VALUES(4, 'Parsons', 'Jim');
+INSERT INTO ACTEUR VALUES(5, 'Wheaton', 'Wil');
+INSERT INTO ACTEUR VALUES(6, 'Judor', 'Eric');
+INSERT INTO ACTEUR VALUES(7, 'Ferdjioui', 'Hafid');
+INSERT INTO ACTEUR VALUES(8, 'Odenkirk', 'Bob');
+
+--JOUE--
+
+--Breaking Bad--
+INSERT INTO JOUE VALUES(58,1);
+INSERT INTO JOUE VALUES(59,1);
+INSERT INTO JOUE VALUES(60,1);
+INSERT INTO JOUE VALUES(61,1);
+INSERT INTO JOUE VALUES(62,1);
+INSERT INTO JOUE VALUES(63,1);
+INSERT INTO JOUE VALUES(64,1);
+INSERT INTO JOUE VALUES(65,1);
+INSERT INTO JOUE VALUES(66,1);
+INSERT INTO JOUE VALUES(67,1);
+INSERT INTO JOUE VALUES(68,1);
+INSERT INTO JOUE VALUES(69,1);
+
+INSERT INTO JOUE VALUES(58,2);
+INSERT INTO JOUE VALUES(59,2);
+INSERT INTO JOUE VALUES(60,2);
+INSERT INTO JOUE VALUES(61,2);
+INSERT INTO JOUE VALUES(62,2);
+INSERT INTO JOUE VALUES(63,2);
+INSERT INTO JOUE VALUES(64,2);
+INSERT INTO JOUE VALUES(65,2);
+INSERT INTO JOUE VALUES(66,2);
+INSERT INTO JOUE VALUES(67,2);
+INSERT INTO JOUE VALUES(68,2);
+INSERT INTO JOUE VALUES(69,2);
+
+INSERT INTO JOUE VALUES(65,8);
+INSERT INTO JOUE VALUES(66,8);
+INSERT INTO JOUE VALUES(67,8);
+INSERT INTO JOUE VALUES(68,8);
+
+--Big Bang Theory--
+
+INSERT INTO JOUE VALUES(41,3);
+INSERT INTO JOUE VALUES(42,3);
+INSERT INTO JOUE VALUES(43,3);
+INSERT INTO JOUE VALUES(44,3);
+INSERT INTO JOUE VALUES(45,3);
+INSERT INTO JOUE VALUES(46,3);
+INSERT INTO JOUE VALUES(47,3);
+INSERT INTO JOUE VALUES(48,3);
+INSERT INTO JOUE VALUES(49,3);
+INSERT INTO JOUE VALUES(50,3);
+INSERT INTO JOUE VALUES(51,3);
+INSERT INTO JOUE VALUES(52,3);
+INSERT INTO JOUE VALUES(53,3);
+INSERT INTO JOUE VALUES(54,3);
+INSERT INTO JOUE VALUES(55,3);
+INSERT INTO JOUE VALUES(56,3);
+INSERT INTO JOUE VALUES(57,3);
+
+INSERT INTO JOUE VALUES(41,4);
+INSERT INTO JOUE VALUES(42,4);
+INSERT INTO JOUE VALUES(43,4);
+INSERT INTO JOUE VALUES(44,4);
+INSERT INTO JOUE VALUES(45,4);
+INSERT INTO JOUE VALUES(46,4);
+INSERT INTO JOUE VALUES(47,4);
+INSERT INTO JOUE VALUES(48,4);
+INSERT INTO JOUE VALUES(49,4);
+INSERT INTO JOUE VALUES(50,4);
+INSERT INTO JOUE VALUES(51,4);
+INSERT INTO JOUE VALUES(52,4);
+INSERT INTO JOUE VALUES(53,4);
+INSERT INTO JOUE VALUES(54,4);
+INSERT INTO JOUE VALUES(55,4);
+INSERT INTO JOUE VALUES(56,4);
+INSERT INTO JOUE VALUES(57,4);
+
+INSERT INTO JOUE VALUES(41,5);
+INSERT INTO JOUE VALUES(52,5);
+INSERT INTO JOUE VALUES(54,5);
+
+--Malcolm--
+
+INSERT INTO JOUE VALUES(70,1);
+INSERT INTO JOUE VALUES(71,1);
+INSERT INTO JOUE VALUES(72,1);
+INSERT INTO JOUE VALUES(73,1);
+INSERT INTO JOUE VALUES(74,1);
+INSERT INTO JOUE VALUES(75,1);
+INSERT INTO JOUE VALUES(76,1);
+INSERT INTO JOUE VALUES(77,1);
+INSERT INTO JOUE VALUES(78,1);
+INSERT INTO JOUE VALUES(79,1);
+INSERT INTO JOUE VALUES(80,1);
+INSERT INTO JOUE VALUES(81,1);
+
+
+--Realisateur--
+
+INSERT INTO REALISATEUR VALUES(1, 'Holland', 'Todd');
+INSERT INTO REALISATEUR VALUES(2, 'Cranston', 'Bryan');
+INSERT INTO REALISATEUR VALUES(3, 'Parsons', 'Jim');
+
+
+--Realise--
+
+INSERT INTO REALISE VALUES(1,70);
+INSERT INTO REALISE VALUES(1,71);
+INSERT INTO REALISE VALUES(1,72);
+INSERT INTO REALISE VALUES(1,73);
+INSERT INTO REALISE VALUES(1,74);
+INSERT INTO REALISE VALUES(1,75);
+INSERT INTO REALISE VALUES(2,76);
+INSERT INTO REALISE VALUES(1,77);
+INSERT INTO REALISE VALUES(1,78);
+INSERT INTO REALISE VALUES(1,79);
+INSERT INTO REALISE VALUES(1,80);
+INSERT INTO REALISE VALUES(1,81);
+
+INSERT INTO REALISE VALUES(3,51)
+INSERT INTO REALISE VALUES(3,54)

@@ -37,14 +37,13 @@ SELECT s."titre", count("numsaison") as nbSaison FROM SERIE s NATURAL JOIN (SELE
 
 -- [9]Quelle série a le plus d’épisodes?
 
--- la fct ne peut pas etre afficher en meme temps qu'un attribut
--- SELECT "idserie", max(nbEpisode) FROM (SELECT sa."idserie", count(sa."idepisode") as nbEpisode FROM SAISON sa GROUP BY sa."idserie" ) ;
+SELECT "idserie", max(nbEpisode) FROM (SELECT sa."idserie", count(sa."idepisode") as nbEpisode FROM SAISON sa GROUP BY sa."idserie" ) ;
 
 -- [10]La série «Big Bang Theory» est-elle plus appréciée des hommes ou des femmes? 
 
--- SELECT "sexe", MAX(moyNote) FROM 
---     (SELECT "idserie", u."sexe", avg(n."note") as moyNote FROM SERIE s NATURAL JOIN NOTE n NATURAL JOIN UTILISATEUR u WHERE s."titre" = 'Big Bang Theory' GROUP BY u."sexe", "idserie")
--- GROUP BY "idserie", "sexe";
+SELECT "sexe", MAX(moyNote) FROM 
+    (SELECT "idserie", u."sexe", avg(n."note") as moyNote FROM SERIE s NATURAL JOIN NOTE n NATURAL JOIN UTILISATEUR u WHERE s."titre" = 'Big Bang Theory' GROUP BY u."sexe", "idserie")
+GROUP BY "idserie", "sexe";
 -- Probleme ORA-00937: la fonction de groupe ne porte pas sur un groupe simple
 
 -- [11]Affichez les séries qui ont une note moyenne inférieure à 5, classé par note.
@@ -61,6 +60,7 @@ SELECT "idepisode" FROM EPISODE NATURAL JOIN NOTE n WHERE "idserie" IS NULL GROU
 
 -- [14]Afficher lenombre moyen d’épisodes des séries avec l’acteur«Bryan Cranston».
 
+SELECT avg(nbEP) FROM (SELECT s."idserie", count("idepisode") as nbEp FROM SERIE s JOIN SAISON sa ON s."idserie" = sa."idserie" NATURAL JOIN EPISODE e NATURAL JOIN JOUE j NATURAL JOIN ACTEUR a WHERE a."nom" = 'Cranston' AND a."prenom" = 'Bryan' GROUP BY s."idserie");
 
 -- [15]Quels acteurs ont réalisé des épisodesde série ?
 
