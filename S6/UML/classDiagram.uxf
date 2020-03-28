@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>30</y>
+      <w>240</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>Client
+--
+- idClient: Integer
+- nom: String
+- pays: String
+- tel: String
+- anciennete: Integer
+--
++ nouvelleCommande(): Commande
++ getId(): Integer
++ getNom(): String
++ getPays(): String
++ getTelephone(): String
++ getAnciennete(): Integer
+
++ setNom(String): Bool
++ setPays(String): Bool
++ setTelephone(String): Bool
++ setAnciennete(String): Bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>100</y>
+      <w>210</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Entreprise FR
+--
+- numeroImmatriculation: String
+- dateImmatriculation: Date
+--
++ getNumI(): String
++ getDateI(): Date
+
++ setNumI(String): Bool
++ setDateI(Date): Bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>30</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Administration
+--
+--
++ estUneAdministration(): Bool
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>90</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Entreprise
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>160</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Particulier
+--
+- prenom: String
+--
++ getPrenom(): String
++ setPrenom(String): Bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>250</x>
+      <y>30</y>
+      <w>220</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>250</x>
+      <y>90</y>
+      <w>220</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>90</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>250</x>
+      <y>150</y>
+      <w>220</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>410</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Produit
+--
+- idProduit: Integer
+- nomProduit: String
+- prixProduit: Float
+--
++ getId(): Integer
++ getPrix(): Float
+
++ setPrix(Float): Bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>410</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Commande
+--
+- idCommande: Integer
+--
++ envoiCommande(): Bool
+
++ getId(): Integer
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>890</x>
+      <y>410</y>
+      <w>210</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>Facture
+--
+- idFacture: Integer
+- totalEuros: Float
+- totalLocal: Float
+- deviseLocal: String
+- coursDevise: Float
+- dateFacture: Date
+--
++ calculerTotalLocal(): Float
++ calculerTotalEuros(): Float
++ envoiFacture(): Bool
+
++ getId(): Integer
++ getTotalEuros(): Float
++ getTotalLocal(): Float
++ getDeviseLocal(): String
++ getCoursDevise(): Float
++ getDateF(): Date
+
++ setTotalEuros(Float): Bool
++ setTotalLocal(Float): Bool
++ setDeviseLocal(String): Bool
++ setCoursDevise(Float): Bool
++ setDateF(Date): Bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>410</y>
+      <w>230</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>210.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>410</y>
+      <w>270</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+// teaches to &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;250.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>250</x>
+      <y>280</y>
+      <w>300</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..n
+// teaches to &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;260.0;10.0;260.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1170</x>
+      <y>430</y>
+      <w>210</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>Livraison
+--
+- idLivraison: Integer
+- dateLivraison: Date
+- livraisonTotal: Bool
+- statutLivraison: String
+--
++ demarrerLivraison(): Bool
++ renvoyerLivraison(): Bool
+
++ getId(): Integer
++ getDate(): Date
++ estTotal(): Bool
++ getStatut(): String
+
++ setDate(Date): Bool
++ setLivraisonTotal(Bool): Bool
++ setStatut(String): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>550</y>
+      <w>260</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Commande Intranet
+--
+--
++ consulterPrix(idProduit: Integer): Float
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>500</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+</diagram>
